@@ -1,0 +1,37 @@
+@import "../../utilities/global-styles";
+
+.social-media-container {
+  display: flex;
+  width: 50%;
+}
+.social-media-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 7vmin;
+  height: 7vmin;
+  border: 1px solid $sebtons-gold;
+  transition: all 0.3s ease-in-out;
+  &:nth-child(2) {
+    margin-left: 1vmin;
+  }
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    background-color: $sebtons-gold;
+    & .insta {
+      fill: white;
+    }
+
+    & .facebook {
+      fill: white;
+    }
+  }
+}
+.social-media-svg {
+  width: 4vmin;
+  height: 4vmin;
+  fill: $sebtons-gold;
+  transition: all 0.3s ease-in-out;
+}

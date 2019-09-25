@@ -1,0 +1,21 @@
+.hamburger-container {
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  padding: 1vmin 1.5vmin 0 0;
+  width: 6vmin;
+  height: 6vmin;
+}
+
+.hamburger-icon {
+  animation: fade 0.7s ease-in-out;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

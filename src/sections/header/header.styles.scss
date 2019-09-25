@@ -1,0 +1,24 @@
+header {
+  display: grid;
+  position: relative;
+  grid-template-rows: auto;
+  grid-auto-columns: auto;
+  grid-template-areas:
+    "logo logo"
+    "phone social ";
+}
+
+.sebtons-logo-container {
+  grid-area: logo;
+  justify-self: center;
+}
+
+.social-media-container {
+  grid-area: social;
+  justify-self: center;
+}
+
+.phone-number-container {
+  grid-area: phone;
+  justify-self: center;
+}

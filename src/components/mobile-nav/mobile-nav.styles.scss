@@ -1,0 +1,11 @@
+@import "../../utilities/global-styles";
+
+.mobile-nav-ul {
+  padding: 0;
+}
+
+.mobile-nav-item {
+  padding: 1vmin;
+  list-style: none;
+  background-color: $sebtons-gold;
+}
