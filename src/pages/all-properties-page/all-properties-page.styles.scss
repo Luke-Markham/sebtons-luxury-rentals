@@ -1,0 +1,15 @@
+@import "../../utilities/global-styles";
+
+.all-properties-page-container {
+  width: 90%;
+  margin: 20vmin auto;
+  display: grid;
+  grid-gap: 20vmin;
+}
+
+.all-properties-title {
+  @extend %title;
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}

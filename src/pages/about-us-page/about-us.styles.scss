@@ -1,0 +1,33 @@
+@import "../../utilities/global-styles";
+
+.about-us-intro {
+  padding: 5vmin;
+  background-color: rgba(0, 0, 0, 0.609);
+  text-align: center;
+  margin-bottom: 5vmin;
+  & > h1 {
+    color: $sebtons-gold;
+    font-weight: 300;
+    font-size: 10vmin;
+    margin-bottom: 0;
+  }
+  & > p {
+    color: white;
+    font-size: 6vmin;
+  }
+}
+
+.about-us-card-1,
+.about-us-card-2 {
+  & > p {
+    text-align: center;
+    margin: 0;
+    padding: 5vmin;
+    font-size: 5vmin;
+  }
+}
+
+hr {
+  width: 90%;
+  margin: 0 auto;
+}

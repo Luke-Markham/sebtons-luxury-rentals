@@ -1,0 +1,29 @@
+@import "../../utilities/global-styles";
+
+.standard-services-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 8vmin 0;
+}
+
+.sub-title {
+  @extend %title;
+  font-size: 6.5vmin;
+}
+
+.services-cards-container {
+  display: grid;
+  padding: 2vmin;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2vmin;
+}
+
+.services-note {
+  width: 90%;
+  padding-left: none;
+  font-size: 3.5vmin;
+  list-style-type: square;
+  align-self: flex-start;
+  margin-bottom: 5vmin;
+}

@@ -1,0 +1,41 @@
+@import "../../utilities/global-styles";
+
+.footer {
+  background-color: $grey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10vmin;
+}
+
+.footer-logo-container {
+  width: 15%;
+}
+
+.footer-nav-phone-and-social-container {
+  display: flex;
+}
+
+.footer-nav-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  margin-right: 6vmin;
+}
+
+.footer-phone-and-social-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 50%;
+  margin-left: 6vmin;
+}
+
+.footer-bottom-bar {
+  width: 100%;
+  padding-top: 3vmin;
+  margin-top: 8vmin;
+  text-align: center;
+  font-size: 3vmin;
+}

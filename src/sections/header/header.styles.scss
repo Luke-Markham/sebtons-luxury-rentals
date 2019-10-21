@@ -1,13 +1,19 @@
 header {
   display: grid;
-  position: relative;
   grid-template-rows: auto;
   grid-auto-columns: auto;
   grid-template-areas:
+    "hamburger hamburger"
     "logo logo"
-    "phone social ";
+    "phone social"
+    "mobileNav mobileNav";
+  padding-bottom: 5vmin;
 }
 
+.hamburger-container {
+  grid-area: hamburger;
+  justify-self: flex-end;
+}
 .sebtons-logo-container {
   grid-area: logo;
   justify-self: center;
@@ -21,4 +27,7 @@ header {
 .phone-number-container {
   grid-area: phone;
   justify-self: center;
+}
+.mobile-nav-container {
+  grid-area: mobileNav;
 }

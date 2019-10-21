@@ -1,10 +1,10 @@
 import React from "react";
 import "./hamburger.styles.scss";
 import { connect } from "react-redux";
-import Fade from "react-reveal";
+import Fade from "react-reveal/Fade";
 import { ReactComponent as OpenNav } from "../../assets/svg/openNav.svg";
 import { ReactComponent as CloseNav } from "../../assets/svg/closeNav.svg";
-import { displayMobileNav } from "../../redux/general/nav.actions";
+import { displayMobileNav } from "../../redux/nav/nav.actions";
 
 const Hamburger = ({ toggleMobileNav, displayMobileNav }) => {
   return (

@@ -1,0 +1,15 @@
+@import "../../utilities/global-styles";
+
+.contact-page-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.contact-page-title {
+  @extend %title;
+  align-self: center;
+  width: 60%;
+  text-align: center;
+}

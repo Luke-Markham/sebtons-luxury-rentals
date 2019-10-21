@@ -1,0 +1,18 @@
+@import "../../utilities/global-styles";
+
+.property-page-container {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10vmin auto;
+}
+
+.property-page-title {
+  @extend %title;
+  margin-bottom: 6vmin;
+}
+
+.property-page-description-container {
+  font-size: 4vmin;
+}

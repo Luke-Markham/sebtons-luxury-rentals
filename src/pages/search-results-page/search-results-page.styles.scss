@@ -1,0 +1,24 @@
+@import "../../utilities/global-styles";
+
+.search-results-page-container {
+  width: 90%;
+  margin: 20vmin auto;
+  display: grid;
+}
+.search-results-container {
+  width: 90%;
+  margin: 20vmin auto;
+  display: grid;
+  grid-gap: 20vmin;
+}
+
+.search-results-title {
+  @extend %title;
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.failed-search-container {
+  margin: 5vmin auto 0vmin auto;
+}

@@ -1,0 +1,21 @@
+@import "../../utilities/global-styles";
+
+.rental-policy-page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rental-policy-page-title {
+  @extend %title;
+}
+
+.rental-policies-container {
+  width: 90%;
+  margin-top: 5vmin;
+}
+
+.policy-text-container {
+  margin: 6vmin 0 10vmin 0;
+  font-size: 3vmin;
+}

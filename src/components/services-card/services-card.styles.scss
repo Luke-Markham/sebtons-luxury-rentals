@@ -1,0 +1,36 @@
+@import "../../utilities/global-styles";
+
+.services-card-container {
+  position: relative;
+  &:hover .services-overlay {
+    opacity: 1;
+  }
+}
+
+.services-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.services-overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  background-color: rgba($sebtons-gold, 0.8);
+  transition: 0.5s ease;
+}
+
+.services-card-text {
+  color: White;
+  font-weight: 600;
+  font-size: 5vmin;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

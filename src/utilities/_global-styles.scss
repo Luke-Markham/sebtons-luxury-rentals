@@ -1,1 +1,21 @@
-$sebtons-gold: rgb(255, 222, 89);
+$sebtons-gold: #ffde59;
+$grey: #fafafa;
+$box-shadow: 0 0 13px rgba(0, 0, 0, 0.3);
+
+%title {
+  font-weight: 300;
+  font-size: 8vmin;
+  padding-bottom: 1vmin;
+  margin-bottom: 2vmin;
+  border-bottom: 0.05vmin solid $sebtons-gold;
+}
+
+%sub-title {
+  font-weight: 300;
+  font-size: 6vmin;
+  padding-bottom: 1vmin;
+  margin-bottom: 2vmin;
+  border-bottom: 0.05vmin solid $sebtons-gold;
+  @media screen and(min-width:768px) {
+  }
+}

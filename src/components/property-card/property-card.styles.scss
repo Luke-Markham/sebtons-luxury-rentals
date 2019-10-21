@@ -1,0 +1,65 @@
+@import "../../utilities/global-styles";
+
+.property-card-container {
+  box-shadow: $box-shadow;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 540px;
+}
+
+.no-shadow {
+  box-shadow: none;
+}
+
+.property-page-link-container {
+  cursor: pointer;
+}
+.property-image {
+  width: 100%;
+}
+
+.all-property-title,
+.featured-property-title {
+  @extend %sub-title;
+  width: 70%;
+  text-align: center;
+  margin: 5vmin auto;
+}
+
+.individual-property-title {
+  @extend %title;
+  width: 70%;
+  text-align: center;
+  margin: 5vmin auto;
+}
+
+.property-description-container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.property-details-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  padding: 5vmin;
+  grid-gap: 2.5vmin;
+}
+
+.details-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 3vmin;
+  font-size: 3.5vmin;
+  border: 1px solid darken($grey, 5%);
+  & span:nth-child(2) {
+    margin: 1.5vmin auto 0 auto;
+    font-weight: 600;
+    color: $sebtons-gold;
+  }
+  @media screen and(min-width: 1260px) {
+    font-size: 2.75vmin;
+  }
+}

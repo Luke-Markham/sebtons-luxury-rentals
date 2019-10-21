@@ -1,0 +1,30 @@
+@import "../../utilities/global-styles";
+
+.property-search-form-container {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  padding: 3vmin;
+  margin: 10vmin auto;
+  background: #f8fafcd3;
+  box-shadow: $box-shadow;
+}
+
+.property-search-title {
+  font-size: 5vmin;
+  align-self: center;
+  text-align: center;
+  width: 80%;
+}
+
+.dropdown {
+  font-family: "Montserrat", sans-serif;
+  width: 80%;
+  margin: 0 auto;
+  font-size: 3.5vmin;
+  padding: 3vmin;
+  border: none;
+  background-color: White;
+  outline-color: $sebtons-gold;
+  border-radius: 0px;
+}

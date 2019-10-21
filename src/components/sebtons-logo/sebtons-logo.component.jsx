@@ -1,11 +1,13 @@
 import React from "react";
-import logo from "../../assets/png/sebtons-logo.png";
 import "./sebtons-logo.styles.scss";
+import Fade from "react-reveal/Fade";
 
-const SebtonsLogo = () => {
+const SebtonsLogo = ({ logoSrc }) => {
   return (
     <div className="sebtons-logo-container">
-      <img className="sebtons-logo" src={logo} alt="sebtons logo"></img>
+      <Fade duration={1500}>
+        <img className="sebtons-logo" src={logoSrc} alt="sebtons logo"></img>
+      </Fade>
     </div>
   );
 };

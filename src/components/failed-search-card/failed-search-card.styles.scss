@@ -1,0 +1,17 @@
+.failed-search-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.failed-search-text {
+  font-size: 6vmin;
+  & p:nth-child(2) {
+    text-align: center;
+  }
+}
+
+.failed-search-back-arrow {
+  width: 15vmin;
+  height: 15vmin;
+}

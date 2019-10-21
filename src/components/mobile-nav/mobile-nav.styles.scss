@@ -1,11 +1,28 @@
 @import "../../utilities/global-styles";
 
+.mobile-nav-container {
+  background-color: $grey;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+}
+
 .mobile-nav-ul {
   padding: 0;
+  margin: 0;
 }
 
 .mobile-nav-item {
-  padding: 1vmin;
+  padding: 3vmin;
   list-style: none;
+  display: inline-block;
+  width: 100%;
+}
+
+.is-current {
+  cursor: none;
   background-color: $sebtons-gold;
+  pointer-events: none;
+  transition: all 0.3s ease-in-out;
 }

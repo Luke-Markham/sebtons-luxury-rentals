@@ -1,0 +1,27 @@
+@import "../../utilities/global-styles";
+
+.contact-form-container {
+  margin: 10vmin 0;
+  background-color: $grey;
+  padding: 2.5vmin;
+  display: flex;
+  flex-direction: column;
+}
+
+fieldset {
+  border: none;
+  margin: 5vmin 0;
+}
+
+legend {
+  @extend %sub-title;
+  font-size: 5vmin;
+  align-self: center;
+  margin: 0 auto 5vmin auto;
+}
+
+textarea {
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  padding: 2vmin;
+}
