@@ -16,6 +16,7 @@ const HomePage = ({
   fetchFeaturedPropertiesStartAsync
 }) => {
   useEffect(() => {
+    window.scrollTo(0, 0);
     fetchFeaturedPropertiesStartAsync();
   }, [fetchFeaturedPropertiesStartAsync]);
   return (

@@ -1,0 +1,28 @@
+@import "../../utilities/global-styles";
+
+.desktop-nav-container {
+  margin: 0 auto;
+  background-color: $grey;
+}
+
+.desktop-nav-ul {
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+}
+.desktop-nav-item {
+  font-size: 2.5vmin;
+  padding: 1vmin;
+  border: 0.5vmin solid transparent;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    border-bottom: 0.5vmin solid rgba(0, 0, 0, 0.609);
+  }
+}
+
+.desktop-is-current {
+  cursor: none;
+  border-bottom: 0.5vmin solid $sebtons-gold;
+  pointer-events: none;
+  transition: all 0.3s ease-in-out;
+}

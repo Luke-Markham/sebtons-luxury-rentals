@@ -23,6 +23,7 @@ const PropertyPage = ({
   } = property[0];
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     const pathname = routeObject.location.pathname;
     const toFetch = pathname.slice(12);
     fetchPropertyStartAsync(toFetch);

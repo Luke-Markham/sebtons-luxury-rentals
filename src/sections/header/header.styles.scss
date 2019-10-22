@@ -7,7 +7,13 @@ header {
     "logo logo"
     "phone social"
     "mobileNav mobileNav";
-  padding-bottom: 5vmin;
+  padding: 0 0 5vmin 0;
+  justify-content: center;
+  @media screen and(min-width: 992px) {
+    grid-template-areas: "social logo phone";
+    grid-auto-columns: 25% 50% 25%;
+    padding: 5vmin 0;
+  }
 }
 
 .hamburger-container {
@@ -22,6 +28,7 @@ header {
 .social-media-container {
   grid-area: social;
   justify-self: center;
+  align-items: center;
 }
 
 .phone-number-container {

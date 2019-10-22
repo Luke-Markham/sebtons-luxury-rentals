@@ -4,7 +4,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 8vmin 0;
+  margin: 8vmin auto;
+  width: 100%;
+  @media screen and(min-width:1260px) {
+    width: 80%;
+  }
 }
 
 .sub-title {
@@ -17,6 +21,9 @@
   padding: 2vmin;
   grid-template-columns: 1fr 1fr;
   grid-gap: 2vmin;
+  @media screen and(min-width:992px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 .services-note {

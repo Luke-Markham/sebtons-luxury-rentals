@@ -13,6 +13,7 @@ const AllPropertiesPage = ({
   fetchAllPropertiesStartAsync
 }) => {
   useEffect(() => {
+    window.scrollTo(0, 0);
     fetchAllPropertiesStartAsync();
   }, [fetchAllPropertiesStartAsync]);
 
@@ -25,30 +26,32 @@ const AllPropertiesPage = ({
       {isFetching ? (
         <Loading />
       ) : (
-        allProperties.map((property, index) => {
-          const {
-            photos,
-            propertyTitle,
-            bedrooms,
-            bathrooms,
-            price,
-            location,
-            propertyPageUrl
-          } = property;
-          return (
-            <Fade key={index}>
-              <PropertyCard
-                photos={photos}
-                price={price}
-                location={location}
-                propertyPageUrl={propertyPageUrl}
-                propertyTitle={propertyTitle}
-                bedrooms={bedrooms}
-                bathrooms={bathrooms}
-              />
-            </Fade>
-          );
-        })
+        <div className="property-cards-layout-container">
+          {allProperties.map((property, index) => {
+            const {
+              photos,
+              propertyTitle,
+              bedrooms,
+              bathrooms,
+              price,
+              location,
+              propertyPageUrl
+            } = property;
+            return (
+              <Fade key={index}>
+                <PropertyCard
+                  photos={photos}
+                  price={price}
+                  location={location}
+                  propertyPageUrl={propertyPageUrl}
+                  propertyTitle={propertyTitle}
+                  bedrooms={bedrooms}
+                  bathrooms={bathrooms}
+                />
+              </Fade>
+            );
+          })}
+        </div>
       )}
     </div>
   );

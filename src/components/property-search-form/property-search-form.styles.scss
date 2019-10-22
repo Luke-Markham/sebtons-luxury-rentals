@@ -3,11 +3,17 @@
 .property-search-form-container {
   display: flex;
   flex-direction: column;
-  width: 80%;
+  width: 90%;
+  margin: 0 auto;
   padding: 3vmin;
-  margin: 10vmin auto;
-  background: #f8fafcd3;
+  background: #f8fafc;
   box-shadow: $box-shadow;
+  @media screen and(min-width:768px) {
+    width: 70%;
+  }
+  @media screen and(min-width:992px) {
+    width: 50%;
+  }
 }
 
 .property-search-title {
@@ -21,10 +27,13 @@
   font-family: "Montserrat", sans-serif;
   width: 80%;
   margin: 0 auto;
-  font-size: 3.5vmin;
-  padding: 3vmin;
+  font-size: 3vmin;
   border: none;
   background-color: White;
   outline-color: $sebtons-gold;
   border-radius: 0px;
+  padding: 2vmin 1vmin;
+  @media screen and(min-width:2000px) {
+    font-size: 2vmin;
+  }
 }

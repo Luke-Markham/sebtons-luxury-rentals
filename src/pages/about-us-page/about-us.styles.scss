@@ -1,9 +1,12 @@
 @import "../../utilities/global-styles";
 
+.about-us-page-container {
+  margin-bottom: 8vmin;
+}
+
 .about-us-intro {
-  padding: 5vmin;
-  background-color: rgba(0, 0, 0, 0.609);
-  text-align: center;
+  position: relative;
+  padding: 10vmin;
   margin-bottom: 5vmin;
   & > h1 {
     color: $sebtons-gold;
@@ -15,15 +18,28 @@
     color: white;
     font-size: 6vmin;
   }
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("../../assets/jpg/about-us-bkg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    left: 0;
+    top: 0;
+  }
 }
 
 .about-us-card-1,
 .about-us-card-2 {
   & > p {
+    width: 90%;
     text-align: center;
-    margin: 0;
+    margin: 0 auto;
     padding: 5vmin;
-    font-size: 5vmin;
+    font-size: 3.5vmin;
   }
 }
 

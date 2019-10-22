@@ -1,10 +1,37 @@
 @import "../../utilities/global-styles";
 
 .statement-container {
-  margin-top: 5vmin;
+  margin: 5vmin 0;
+  display: flex;
+  @media screen and(min-width: 1260px) {
+    margin: 5vmin 0 0 0;
+  }
+}
+
+.person {
+  justify-self: flex-end;
+  display: none;
+  width: 100%;
+  @media screen and(min-width:1260px) {
+    display: block;
+  }
+}
+
+.statements {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+  margin: 10vmin 0;
+  @media screen and(min-width: 992px) {
+    width: 80%;
+    margin: 10vmin auto;
+  }
+
+  @media screen and(min-width: 1260px) {
+    margin: 0;
+    align-items: flex-end;
+  }
 }
 
 .statement-card {
@@ -26,14 +53,14 @@
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  width: 10.5vmin;
-  height: 10.5vmin;
+  width: 10vmin;
+  height: 10vmin;
   border: 1px solid $sebtons-gold;
   transition: all 0.3s ease-in-out;
 }
 
 .statement-text {
-  font-size: 4vmin;
-  width: 75%;
+  font-size: 3.75vmin;
+  width: 85%;
   margin-left: 4vmin;
 }

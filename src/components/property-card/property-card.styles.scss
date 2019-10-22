@@ -1,11 +1,22 @@
 @import "../../utilities/global-styles";
 
 .property-card-container {
-  box-shadow: $box-shadow;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  margin: 0 auto;
   max-width: 540px;
+  box-shadow: $box-shadow;
+  background-color: white;
+
+  @media screen and(min-width:1260px) {
+    max-width: 600px;
+  }
+  @media screen and(min-width:2500px) {
+    max-width: 700px;
+  }
+  @media screen and(min-width:3500px) {
+    max-width: 1000px;
+  }
 }
 
 .no-shadow {
@@ -25,6 +36,9 @@
   width: 70%;
   text-align: center;
   margin: 5vmin auto;
+  @media screen and(min-width:1260px) {
+    width: 90%;
+  }
 }
 
 .individual-property-title {
@@ -43,7 +57,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
-  padding: 5vmin;
+  padding: 2.5vmin;
   grid-gap: 2.5vmin;
 }
 
@@ -60,6 +74,6 @@
     color: $sebtons-gold;
   }
   @media screen and(min-width: 1260px) {
-    font-size: 2.75vmin;
+    font-size: 2.25vmin;
   }
 }

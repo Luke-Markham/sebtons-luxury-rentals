@@ -1,32 +1,29 @@
 @import "../../utilities/global-styles";
 
 .featured-properties-container {
-  width: 90%;
-  margin: 20vmin auto;
+  position: relative;
+  margin: 0 auto;
+  padding: 10vmin 0;
   display: grid;
-  grid-gap: 20vmin;
+  grid-gap: 15vmin;
+  justify-items: center;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), white),
+      url("../../assets/jpg/properties-bkg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }
 
 .featured-properties-title {
   @extend %title;
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
   text-align: center;
-}
-
-.property-cards-layout-container {
-  display: grid;
-  grid-gap: 20vmin;
-  margin: 0 auto;
-
-  @media only screen and (min-width: 1040px) {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    grid-gap: 10vmin;
-  }
-  @media only screen and (min-width: 1260px) {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    grid-gap: 10vmin;
-  }
 }

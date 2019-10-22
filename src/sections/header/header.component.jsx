@@ -5,11 +5,12 @@ import SebtonsLogo from "../../components/sebtons-logo/sebtons-logo.component";
 import PhoneNumber from "../../components/phone-number/phone-number.component";
 import Hamburger from "../../components/hamburger/hamburger.component";
 import logo from "../../assets/png/sebtons-logo-main.png";
+
 const Header = () => {
   return (
     <header>
       <Hamburger />
-      <SebtonsLogo logoSrc={logo} />
+      <SebtonsLogo size="sebtons-logo-large" logoSrc={logo} />
       <SocialMedia />
       <PhoneNumber />
     </header>

@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./about-us.styles.scss";
 import Fade from "react-reveal/Fade";
 
 const AboutUsPage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <section className="about-us-page-container">
       <div className="about-us-intro">

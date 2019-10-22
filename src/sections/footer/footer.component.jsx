@@ -10,16 +10,14 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-logo-container">
-        <SebtonsLogo logoSrc={logoS} />
+        <SebtonsLogo size="sebtons-logo-small" logoSrc={logoS} />
       </div>
-      <div className="footer-nav-phone-and-social-container">
-        <div className="footer-nav-container">
-          <FooterNav />
-        </div>
-        <div className="footer-phone-and-social-container">
-          <PhoneNumber />
-          <SocialMedia />
-        </div>
+      <div className="footer-nav-container">
+        <FooterNav />
+      </div>
+      <div className="footer-phone-and-social-container">
+        <PhoneNumber />
+        <SocialMedia />
       </div>
 
       <div className="footer-bottom-bar">

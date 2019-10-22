@@ -5,7 +5,7 @@
 }
 
 .failed-search-text {
-  font-size: 6vmin;
+  font-size: 4vmin;
   & p:nth-child(2) {
     text-align: center;
   }
@@ -14,4 +14,9 @@
 .failed-search-back-arrow {
   width: 15vmin;
   height: 15vmin;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    width: 16vmin;
+    height: 16vmin;
+  }
 }

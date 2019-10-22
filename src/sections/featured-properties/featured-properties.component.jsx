@@ -6,7 +6,9 @@ import Fade from "react-reveal/Fade";
 const FeaturedProperties = ({ featuredProperties }) => {
   return (
     <div className="featured-properties-container">
-      <h2 className="featured-properties-title">Featured Properties</h2>
+      <Fade left>
+        <h2 className="featured-properties-title">Featured Properties</h2>
+      </Fade>
       <div className="property-cards-layout-container">
         {featuredProperties.map((property, index) => {
           const {

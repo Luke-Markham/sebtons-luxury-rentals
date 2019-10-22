@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./failed-search-card.styles.scss";
 import { ReactComponent as BackArrow } from "../../assets/svg/back-arrow.svg";
 import Fade from "react-reveal/Fade";
 const FailedSearchCard = ({ routeObject }) => {
+  useEffect(() => {
+    window.scrollTo(0, 150);
+  }, []);
   return (
     <div className="failed-search-container">
       <div className="failed-search-text">

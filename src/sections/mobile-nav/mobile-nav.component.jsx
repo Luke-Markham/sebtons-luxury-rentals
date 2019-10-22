@@ -30,7 +30,7 @@ const MobileNav = ({ toggleMobileNav, displayMobileNav }) => {
                   to="/home"
                   className="mobile-nav-item"
                   onClick={toggleMobileNav}
-                  activeClassName="is-current"
+                  activeClassName="mobile-is-current"
                 >
                   Home
                 </NavLink>
@@ -39,7 +39,7 @@ const MobileNav = ({ toggleMobileNav, displayMobileNav }) => {
                   to="/properties"
                   className="mobile-nav-item"
                   onClick={toggleMobileNav}
-                  activeClassName="is-current"
+                  activeClassName="mobile-is-current"
                 >
                   Properties
                 </NavLink>
@@ -48,7 +48,7 @@ const MobileNav = ({ toggleMobileNav, displayMobileNav }) => {
                   to="/services"
                   className="mobile-nav-item"
                   onClick={toggleMobileNav}
-                  activeClassName="is-current"
+                  activeClassName="mobile-is-current"
                 >
                   Services
                 </NavLink>
@@ -57,7 +57,7 @@ const MobileNav = ({ toggleMobileNav, displayMobileNav }) => {
                   to="/rentalpolicy"
                   className="mobile-nav-item"
                   onClick={toggleMobileNav}
-                  activeClassName="is-current"
+                  activeClassName="mobile-is-current"
                 >
                   Rental Policy
                 </NavLink>
@@ -66,7 +66,7 @@ const MobileNav = ({ toggleMobileNav, displayMobileNav }) => {
                   to="/aboutus"
                   className="mobile-nav-item"
                   onClick={toggleMobileNav}
-                  activeClassName="is-current"
+                  activeClassName="mobile-is-current"
                 >
                   About Us
                 </NavLink>
@@ -75,7 +75,7 @@ const MobileNav = ({ toggleMobileNav, displayMobileNav }) => {
                   to="/contact"
                   className="mobile-nav-item"
                   onClick={toggleMobileNav}
-                  activeClassName="is-current"
+                  activeClassName="mobile-is-current"
                 >
                   Contact
                 </NavLink>

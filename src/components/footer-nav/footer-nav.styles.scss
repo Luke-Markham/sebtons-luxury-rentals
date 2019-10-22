@@ -1,8 +1,17 @@
+@import "../../utilities/global-styles";
+
 .footer-nav-item {
-  font-size: 3vmin;
-  padding-top: 1vmin;
+  font-size: 2.5vmin;
+  padding: 0.25vmin;
   list-style-type: none;
+  border: 0.5vmin solid transparent;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    border-bottom: 0.5vmin solid $sebtons-gold;
+  }
 }
 .footer-nav-ul {
+  display: flex;
+  flex-direction: column;
   padding: 0;
 }
