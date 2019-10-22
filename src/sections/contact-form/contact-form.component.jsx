@@ -67,7 +67,7 @@ const ContactForm = () => {
 
   return (
     <form className="contact-form-container" onSubmit={handleSubmit}>
-      <fieldset>
+      <fieldset className="details">
         <legend>Your Details</legend>
         <GeneralFormInput
           type="text"
@@ -110,7 +110,7 @@ const ContactForm = () => {
           onChange={handleFields}
         />
       </fieldset>
-      <fieldset>
+      <fieldset className="options">
         <legend>Optional Services</legend>
         <CheckboxInput
           name="chauffeur"
@@ -185,7 +185,7 @@ const ContactForm = () => {
           checked={formState.fishing}
         />
       </fieldset>
-      <fieldset>
+      <fieldset className="requests">
         <legend>Requests</legend>
         <textarea
           name="requests"
@@ -196,7 +196,7 @@ const ContactForm = () => {
           placeholder="Please state which property your interested in by name and mention any service you'd like to book or know more about..."
         ></textarea>
       </fieldset>
-      <Btn typeOfBtn="submit" text="Send" />
+      <Btn btnClass="contact-form-submit-btn" typeOfBtn="submit" text="Send" />
     </form>
   );
 };

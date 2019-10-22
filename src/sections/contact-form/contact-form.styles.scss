@@ -1,11 +1,23 @@
 @import "../../utilities/global-styles";
 
 .contact-form-container {
-  margin: 10vmin 0;
+  margin: 10vmin auto;
   background-color: $grey;
   padding: 2.5vmin;
   display: flex;
   flex-direction: column;
+  @media screen and(min-width:768px) {
+    width: 70%;
+  }
+  @media screen and(min-width:1260px) {
+    display: grid;
+    margin: 15vmin auto;
+    flex-direction: row;
+    grid-template-areas:
+      "details options"
+      "requests requests"
+      "submit submit";
+  }
 }
 
 fieldset {
@@ -24,4 +36,16 @@ textarea {
   width: 100%;
   font-family: "Montserrat", sans-serif;
   padding: 2vmin;
+  font-size: 3vmin;
+}
+
+.details {
+  grid-area: details;
+}
+.options {
+  grid-area: options;
+  margin: 5vmin auto;
+}
+.requests {
+  grid-area: requests;
 }

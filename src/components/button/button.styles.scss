@@ -11,3 +11,15 @@
   padding: 1.5vmin;
   outline: none;
 }
+.contact-form-submit-btn {
+  grid-area: submit;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 3vmin;
+  width: 50%;
+  margin: 1vmin auto;
+  border: 1px solid #dfdfdf;
+  background-color: lighten($sebtons-gold, 5%);
+  padding: 1.5vmin;
+  outline: none;
+}

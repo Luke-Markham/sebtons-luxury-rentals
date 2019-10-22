@@ -1,8 +1,8 @@
 import React from "react";
 import "./button.styles.scss";
-const Btn = ({ typeOfBtn, text }) => {
+const Btn = ({ typeOfBtn, text, btnClass }) => {
   return (
-    <button className="button" type={typeOfBtn}>
+    <button className={btnClass ? btnClass : "button"} type={typeOfBtn}>
       {text}
     </button>
   );

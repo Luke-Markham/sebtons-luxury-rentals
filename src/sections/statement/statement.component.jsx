@@ -36,7 +36,6 @@ const Statement = () => {
             </p>
           </div>
         </div>
-
         <img className="person" src={person} alt="owner of sebtons" />
       </Fade>
     </section>

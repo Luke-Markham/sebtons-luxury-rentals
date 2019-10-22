@@ -40,7 +40,7 @@ const SearchResultsPage = ({
           </Fade>
         </div>
       ) : (
-        <div className="search-results-container">
+        <div className="property-cards-layout-container">
           {searchResults.map((property, index) => {
             const {
               photos,
