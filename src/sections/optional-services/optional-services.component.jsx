@@ -1,5 +1,6 @@
 import React from "react";
-import "./optional-services.styles.scss";
+// optional and standard services styles the same, stylesheet kept in the standard services folder
+import "../standard-services/standard-optional-services.styles.scss";
 import Fade from "react-reveal/Fade";
 import ServicesCard from "../../components/services-card/services-card.component";
 import boatRentalCharter from "../../assets/jpg/servicesCardImages/boatRental-charters.jpg";
@@ -11,13 +12,13 @@ import scubaDivingFishing from "../../assets/jpg/servicesCardImages/scuba-diving
 
 const OptionalServices = () => {
   return (
-    <section className="optional-services-container">
+    <section className="standard-optional-services-container">
       <Fade duration={2500}>
         <h3 className="sub-title">Optional</h3>
         <ul className="services-note">
           <li>
             Please request which optional services you would like to add or get
-            more information about when choosing a property
+            more information about when contacting us about a property
           </li>
         </ul>
       </Fade>

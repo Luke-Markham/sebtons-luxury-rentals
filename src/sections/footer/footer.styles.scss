@@ -1,30 +1,36 @@
 @import "../../utilities/global-styles";
 
 .footer {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
   background-color: $grey;
   padding: 5vmin 0 2.5vmin 0;
   display: grid;
+  justify-content: center;
   grid-template-areas:
     "footerLogo footerLogo"
     "footerNav phoneSocial"
     "footerBar footerBar";
+  grid-template-columns: 50% 50%;
   @media screen and(min-width:768px) {
     grid-template-areas:
       "footerNav footerLogo phoneSocial"
       "footerBar footerBar footerBar";
-    grid-template-columns: 33% 33% 33%;
+    grid-template-columns: 40% 20% 40%;
   }
 }
 
 .footer-logo-container {
-  width: 15%;
+  width: 20%;
   grid-area: footerLogo;
   margin: 0 auto;
-  justify-self: center;
-  align-self: center;
+  @media screen and(min-width:768px) {
+    width: 60%;
+    margin: auto;
+  }
   @media screen and(min-width:992px) {
     width: 50%;
-    margin: auto;
   }
 }
 
@@ -35,7 +41,7 @@
   justify-self: center;
   align-self: center;
   @media screen and(min-width:992px) {
-    justify-self: flex-end;
+    justify-self: center;
   }
 }
 
@@ -43,12 +49,10 @@
   grid-area: phoneSocial;
   justify-self: center;
   align-self: center;
-  @media screen and(min-width:992px) {
-    justify-self: flex-start;
-    & > :nth-child(2) {
-      margin-top: 2vmin;
-      justify-content: flex-start;
-    }
+
+  & > :nth-child(2) {
+    margin-top: 2vmin;
+    justify-content: flex-start;
   }
 }
 

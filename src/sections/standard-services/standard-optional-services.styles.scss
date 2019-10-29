@@ -1,0 +1,40 @@
+@import "../../utilities/global-styles";
+
+.standard-optional-services-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 8vmin auto;
+  width: 100%;
+}
+
+.sub-title {
+  @extend %title;
+  font-size: 4vmin;
+  padding: 0 3vmin;
+}
+
+.services-cards-container {
+  display: grid;
+  grid-gap: 5vmin;
+  grid-template-columns: 1fr 1fr;
+  padding: 2vmin;
+  @media screen and(min-width:768px) {
+    width: 90%;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  @media screen and(min-width:992px) {
+    width: 70%;
+  }
+}
+
+.services-note {
+  margin: 2vmin auto 5vmin auto;
+  width: 70%;
+  padding-left: 0;
+  font-size: 2.5vmin;
+  list-style-type: square;
+  @media screen and(min-width:768px) {
+    width: 50%;
+  }
+}

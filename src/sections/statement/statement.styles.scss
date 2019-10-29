@@ -1,8 +1,11 @@
 @import "../../utilities/global-styles";
 
 .statement-container {
-  margin: 5vmin 0;
+  margin: 10vmin 0;
   display: flex;
+  @media screen and(min-width: 992px) {
+    margin: 5vmin 0;
+  }
   @media screen and(min-width: 1260px) {
     margin: 5vmin 0 0 0;
   }
@@ -24,7 +27,7 @@
   align-items: center;
   margin: 10vmin 0;
   @media screen and(min-width: 992px) {
-    width: 80%;
+    width: 70%;
     margin: 10vmin auto;
   }
 
@@ -39,13 +42,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.statement-icon-svg {
-  width: 6.5vmin;
-  height: 6.5vmin;
-  fill: $sebtons-gold;
-  transition: all 0.3s ease-in-out;
+  margin: 1vmin 0;
 }
 
 .statement-icon-container {
@@ -59,8 +56,15 @@
   transition: all 0.3s ease-in-out;
 }
 
+.statement-icon-svg {
+  width: 6.5vmin;
+  height: 6.5vmin;
+  fill: $sebtons-gold;
+  transition: all 0.3s ease-in-out;
+}
+
 .statement-text {
-  font-size: 3.75vmin;
+  font-size: 3vmin;
   width: 85%;
   margin-left: 4vmin;
 }

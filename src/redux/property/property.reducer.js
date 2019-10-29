@@ -1,5 +1,5 @@
 const INITIAL_STATE = {
-  property: [""],
+  property: [false],
   isFetching: false,
   errorMessage: undefined
 };

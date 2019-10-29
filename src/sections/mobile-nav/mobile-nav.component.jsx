@@ -6,7 +6,7 @@ import { animated, useTransition } from "react-spring";
 import { displayMobileNav } from "../../redux/nav/nav.actions";
 
 const MobileNav = ({ toggleMobileNav, displayMobileNav }) => {
-  const slideDown = useTransition(displayMobileNav, null, {
+  const slideRight = useTransition(displayMobileNav, null, {
     from: { transform: "translateX(+100%)" },
     enter: { transform: "translateX(0%)" },
     leave: { transform: "translateX(+100%)" }
@@ -14,7 +14,7 @@ const MobileNav = ({ toggleMobileNav, displayMobileNav }) => {
 
   return (
     <nav className="mobile-nav-container">
-      {slideDown.map(
+      {slideRight.map(
         // props needed for reactSpring library
         ({ item, key, props }) =>
           item && (

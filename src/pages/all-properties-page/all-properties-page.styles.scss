@@ -1,10 +1,13 @@
 @import "../../utilities/global-styles";
 
 .all-properties-page-container {
-  width: 90%;
-  margin: 20vmin auto;
+  position: relative;
+  padding: 10vmin 0;
+
+  margin: auto;
   display: grid;
-  grid-gap: 20vmin;
+  justify-items: center;
+  grid-gap: 15vmin;
 }
 
 .all-properties-title {

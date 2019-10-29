@@ -1,20 +1,85 @@
+@import "../../utilities/global-styles";
+
 .photo-carousel-container {
   position: relative;
+  width: 100%;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+
+.lightbox-version {
+  width: 90%;
+  @media screen and(min-width:768px) {
+    width: 80%;
+  }
+  @media screen and(min-width:1040px) {
+    width: 70%;
+  }
+  @media screen and(min-width:1260px) {
+    width: 60%;
+  }
+}
+
+.close-lightbox {
+  position: absolute;
+  right: 2%;
+  top: 2.5%;
+  height: 3vmin;
+  width: 3vmin;
+  fill: white;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    cursor: pointer;
+    transform: rotate(180deg);
+  }
 }
 
 .next-photo {
-  position: absolute;
   right: 1%;
-  top: 40%;
-  height: 5vmin;
-  width: 5vmin;
-  fill: white;
+  &:hover {
+    cursor: pointer;
+    animation: next 0.7s ease-in-out 2 forwards;
+  }
 }
 .prev-photo {
-  position: absolute;
   left: 1%;
-  top: 40%;
+  &:hover {
+    cursor: pointer;
+    animation: prev 0.5s ease-in-out 2 forwards;
+  }
+}
+.next-photo,
+.prev-photo {
+  position: absolute;
   height: 5vmin;
   width: 5vmin;
   fill: white;
+  top: 40%;
+  @media screen and(min-width:1040px) {
+    height: 6vmin;
+    width: 6vmin;
+  }
+}
+
+@keyframes next {
+  0% {
+    opacity: 0;
+    transform: translateX(-2%);
+  }
+  100% {
+    transform: translateX(15%);
+    opacity: 1;
+  }
+}
+
+@keyframes prev {
+  0% {
+    opacity: 0;
+    transform: translateX(2%);
+  }
+  100% {
+    transform: translateX(-15%);
+    opacity: 1;
+  }
 }

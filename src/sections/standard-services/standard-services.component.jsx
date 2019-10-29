@@ -1,5 +1,5 @@
 import React from "react";
-import "./standard-services.styles.scss";
+import "./standard-optional-services.styles.scss";
 import Fade from "react-reveal/Fade";
 import ServicesCard from "../../components/services-card/services-card.component";
 import houseKeeping from "../../assets/jpg/servicesCardImages/housekeeping.jpg";
@@ -11,7 +11,7 @@ import welcomeDrink from "../../assets/jpg/servicesCardImages/welcomeDrink.jpg";
 
 const StandardServices = () => {
   return (
-    <section className="standard-services-container">
+    <section className="standard-optional-services-container">
       <Fade duration={2500}>
         <h3 className="sub-title">Standard</h3>
         <ul className="services-note">

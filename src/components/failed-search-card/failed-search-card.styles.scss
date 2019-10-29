@@ -14,9 +14,19 @@
 .failed-search-back-arrow {
   width: 15vmin;
   height: 15vmin;
-  transition: all 0.3s ease-in-out;
   &:hover {
-    width: 16vmin;
-    height: 16vmin;
+    cursor: pointer;
+    animation: goBack 1s ease-in-out infinite;
+  }
+}
+@keyframes goBack {
+  0% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(-15%);
+  }
+  100% {
+    transform: translateX(0%);
   }
 }

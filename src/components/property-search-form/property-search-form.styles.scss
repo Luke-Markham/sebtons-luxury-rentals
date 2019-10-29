@@ -3,7 +3,7 @@
 .property-search-form-container {
   display: flex;
   flex-direction: column;
-  width: 90%;
+  width: 85%;
   margin: 0 auto;
   padding: 3vmin;
   background: #f8fafc;
@@ -14,20 +14,23 @@
   @media screen and(min-width:992px) {
     width: 50%;
   }
+  @media screen and(min-width:1260px) {
+    width: 40%;
+  }
 }
 
 .property-search-title {
-  font-size: 5vmin;
+  font-size: 3vmin;
   align-self: center;
   text-align: center;
-  width: 80%;
+  width: 50%;
 }
 
 .dropdown {
   font-family: "Montserrat", sans-serif;
   width: 80%;
   margin: 0 auto;
-  font-size: 3vmin;
+  font-size: 2.5vmin;
   border: none;
   background-color: White;
   outline-color: $sebtons-gold;

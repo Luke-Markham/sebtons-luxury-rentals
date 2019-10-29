@@ -3,9 +3,9 @@
 .button {
   cursor: pointer;
   border-radius: 5px;
-  font-size: 3vmin;
+  font-size: 2.5vmin;
   width: 50%;
-  margin: 1vmin auto;
+  margin: 5vmin auto;
   border: 1px solid #dfdfdf;
   background-color: lighten($sebtons-gold, 5%);
   padding: 1.5vmin;
@@ -15,11 +15,22 @@
   grid-area: submit;
   cursor: pointer;
   border-radius: 5px;
-  font-size: 3vmin;
+  font-size: 2.5vmin;
   width: 50%;
-  margin: 1vmin auto;
+  margin: 5vmin auto;
   border: 1px solid #dfdfdf;
-  background-color: lighten($sebtons-gold, 5%);
+  background-color: lighten($sebtons-gold, 2%);
   padding: 1.5vmin;
   outline: none;
+  @media screen and(min-width:1040px) {
+    margin-top: 0;
+  }
+}
+.button,
+.contact-form-submit-btn {
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    box-shadow: $box-shadow;
+    color: black;
+  }
 }

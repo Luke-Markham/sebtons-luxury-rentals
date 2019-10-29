@@ -10,20 +10,14 @@ const PropertyCard = ({
   bathrooms,
   price,
   location,
-  description,
   imageUrl,
   altDescription,
   wifi,
   minStay
 }) => {
   return (
-    <div
-      className={
-        "property-card-container" +
-        (photos && !propertyPageUrl ? " no-shadow" : "")
-      }
-    >
-      {/*  Featured Property */}
+    <div className="property-card-container">
+      {/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=  Featured Property =-=-=-=-=-=-=-=-=-=-=-=-=-=-=  */}
       {imageUrl && altDescription && propertyPageUrl ? (
         <a
           className="property-page-link-container"
@@ -33,7 +27,7 @@ const PropertyCard = ({
           <p className="featured-property-title">{propertyTitle}</p>
         </a>
       ) : null}
-      {/* All Properties */}
+      {/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-= All Properties =-=-=-=-=-=-=-=-=-=-=-=-=-=-= */}
       {photos && propertyPageUrl ? (
         <div>
           <PhotoCarousel photosArray={photos} />
@@ -43,21 +37,6 @@ const PropertyCard = ({
           >
             <p className="all-property-title">{propertyTitle}</p>
           </a>
-        </div>
-      ) : null}
-      {/* Individual Property */}
-      {photos && !propertyPageUrl ? (
-        <div>
-          <h1 className="individual-property-title">{propertyTitle}</h1>
-          <PhotoCarousel photosArray={photos} />
-        </div>
-      ) : null}
-
-      {description ? (
-        <div className="property-description-container">
-          {description.split("BREAK").map((para, index) => {
-            return <p key={index}>{para}</p>;
-          })}
         </div>
       ) : null}
 

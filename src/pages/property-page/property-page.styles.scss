@@ -1,18 +1,79 @@
 @import "../../utilities/global-styles";
 
 .property-page-container {
+  // position: relative;
   width: 90%;
   display: flex;
   flex-direction: column;
-  align-items: center;
   margin: 10vmin auto;
+  @media screen and(min-width:768px) {
+    display: grid;
+    grid-template-areas:
+      "title title"
+      "col1 col2";
+  }
+}
+
+.property-page-layout-col-1 {
+  grid-area: col1;
+}
+
+.property-page-layout-col-2 {
+  grid-area: col2;
 }
 
 .property-page-title {
   @extend %title;
-  margin-bottom: 6vmin;
+  margin: 0 auto 6vmin auto;
+  grid-area: title;
+  text-align: center;
+  width: 80%;
 }
 
 .property-page-description-container {
-  font-size: 4vmin;
+  font-size: 2.5vmin;
+  @media screen and(min-width:768px) {
+    & p:first-child {
+      margin-top: 0;
+    }
+  }
+}
+.property-page-photo-carousel-container {
+  margin-bottom: 3vmin;
+
+  @media screen and(min-width:768px) {
+    margin-right: 2vmin;
+  }
+}
+
+.property-page-details-container {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  margin: 4vmin auto 0 auto;
+  @media screen and(min-width:768px) {
+    width: 95%;
+    margin: 10vmin 0 0 0;
+  }
+  @media screen and(min-width:1260px) {
+    width: 85%;
+    margin: 10vmin 0 0 0;
+  }
+}
+
+.property-page-detail {
+  display: flex;
+  align-items: center;
+  font-size: 2.5vmin;
+  margin-bottom: 2vmin;
+}
+
+.details-icon {
+  width: 7vmin;
+  height: 7vmin;
+  background-color: $sebtons-gold;
+  padding: 1.25vmin;
+  margin-right: 2vmin;
+  border-radius: 50%;
+  fill: white;
 }

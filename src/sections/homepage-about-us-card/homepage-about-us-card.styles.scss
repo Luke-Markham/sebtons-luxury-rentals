@@ -5,7 +5,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 20vmin;
+  padding-bottom: 10vmin;
 
   &::before {
     content: "";
@@ -24,36 +24,43 @@
 
 .homepage-about-us-title {
   @extend %title;
-  margin-top: 10vmin;
+  margin: 10vmin auto 5vmin auto;
+  width: 40%;
+  text-align: center;
+  @media screen and(min-width:1040px) {
+    margin: 10vmin auto;
+  }
 }
 .homepage-about-us-title-description {
   font-weight: 300;
   width: 90%;
   text-align: center;
-  font-size: 4.5vmin;
+  font-size: 3vmin;
 }
 
 .homepage-about-us-layout-container {
   display: flex;
   flex-direction: column;
-  @media screen and (min-width: 1260px) {
+  @media screen and (min-width: 1040px) {
     flex-direction: row;
   }
 }
 .homepage-about-us-text {
-  font-size: 3.75vmin;
+  font-size: 3.5vmin;
   width: 80%;
   margin: 5vmin auto;
-  @media screen and (min-width: 1260px) {
-    width: 40%;
-    margin: auto 0 auto auto;
+  @media screen and (min-width: 1040px) {
+    width: 45%;
+    margin: auto 0 auto 5vmin;
   }
 }
 .world-map {
   margin: 0 auto;
+  height: 80%;
   width: 80%;
-  @media screen and (min-width: 1260px) {
+  @media screen and (min-width: 1040px) {
     width: 55%;
-    margin: 0;
+    width: 55%;
+    margin: auto;
   }
 }

@@ -4,19 +4,17 @@ $box-shadow: 0 0 13px rgba(0, 0, 0, 0.3);
 
 %title {
   font-weight: 300;
-  font-size: 8vmin;
-  padding-bottom: 1vmin;
+  font-size: 7vmin;
+  padding-bottom: 0.5vmin;
   margin-bottom: 2vmin;
   border-bottom: 0.05vmin solid $sebtons-gold;
 }
 
 %sub-title {
   font-weight: 300;
-  font-size: 6vmin;
-  padding-bottom: 1vmin;
+  font-size: 4vmin;
+  padding-bottom: 0.5vmin;
   margin-bottom: 2vmin;
   border-bottom: 0.05vmin solid $sebtons-gold;
-  @media screen and(min-width:1260px) {
-    font-size: 5vmin;
-  }
+  transition: all 0.3s ease-in-out;
 }

@@ -10,11 +10,13 @@ const ServicesPage = () => {
   }, []);
   return (
     <section className="services-page-container">
-      <div className="services-header">
-        <Fade left>
-          <h2 className="services-title">Services</h2>
-        </Fade>
-      </div>
+      <Fade>
+        <div className="services-header">
+          <Fade left>
+            <h2 className="services-title">Services</h2>
+          </Fade>
+        </div>
+      </Fade>
       <StandardServices />
       <OptionalServices />
     </section>

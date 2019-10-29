@@ -1,11 +1,13 @@
 import React, { useEffect } from "react";
+import "./all-properties-page.styles.scss";
+
 import { connect } from "react-redux";
 import { fetchAllPropertiesStartAsync } from "../../redux/allProperties/allProperties.actions";
 import { allPropertiesSelector } from "../../redux/allProperties/allProperties.selectors";
-import "./all-properties-page.styles.scss";
 import PropertyCard from "../../components/property-card/property-card.component";
-import Loading from "../../components/loading/loading.component";
 import Fade from "react-reveal/Fade";
+
+import ReactLoading from "react-loading";
 
 const AllPropertiesPage = ({
   isFetching,
@@ -22,9 +24,8 @@ const AllPropertiesPage = ({
       <Fade left>
         <h2 className="all-properties-title">Properties</h2>
       </Fade>
-
       {isFetching ? (
-        <Loading />
+        <ReactLoading type="cylon" color="#ffde59" height="%20" width="40%" />
       ) : (
         <div className="property-cards-layout-container">
           {allProperties.map((property, index) => {

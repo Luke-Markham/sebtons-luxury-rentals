@@ -3,20 +3,24 @@
 .contact-form-container {
   margin: 10vmin auto;
   background-color: $grey;
+  box-shadow: $box-shadow;
   padding: 2.5vmin;
   display: flex;
   flex-direction: column;
-  @media screen and(min-width:768px) {
+  align-items: center;
+  @media screen and(min-width:600px) {
     width: 70%;
   }
-  @media screen and(min-width:1260px) {
+  @media screen and(min-width:1040px) {
+    align-items: unset;
     display: grid;
-    margin: 15vmin auto;
+    width: 80%;
+    margin-top: 5vmin;
     flex-direction: row;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas:
-      "details options"
-      "requests requests"
-      "submit submit";
+      "details options requests"
+      "submit submit submit";
   }
 }
 
@@ -30,6 +34,7 @@ legend {
   font-size: 5vmin;
   align-self: center;
   margin: 0 auto 5vmin auto;
+  padding: 0.5vmin 0;
 }
 
 textarea {
@@ -37,10 +42,18 @@ textarea {
   font-family: "Montserrat", sans-serif;
   padding: 2vmin;
   font-size: 3vmin;
+  @media screen and(min-width:1040px) {
+    font-size: 2.5vmin;
+    height: 75%;
+  }
 }
 
 .details {
   grid-area: details;
+  width: 80%;
+  @media screen and(min-width:1040px) {
+    width: 100%;
+  }
 }
 .options {
   grid-area: options;
@@ -48,4 +61,5 @@ textarea {
 }
 .requests {
   grid-area: requests;
+  width: 100%;
 }

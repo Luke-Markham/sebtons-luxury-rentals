@@ -1,7 +1,6 @@
 header {
   display: grid;
-  grid-template-rows: auto;
-  grid-auto-columns: auto;
+
   grid-template-areas:
     "hamburger hamburger"
     "logo logo"
@@ -11,7 +10,7 @@ header {
   justify-content: center;
   @media screen and(min-width: 992px) {
     grid-template-areas: "social logo phone";
-    grid-auto-columns: 25% 50% 25%;
+    grid-template-columns: 30% 35% 30%;
     padding: 5vmin 0;
   }
 }
@@ -20,9 +19,8 @@ header {
   grid-area: hamburger;
   justify-self: flex-end;
 }
-.sebtons-logo-container {
+.sebtons-logo-large {
   grid-area: logo;
-  justify-self: center;
 }
 
 .social-media-container {

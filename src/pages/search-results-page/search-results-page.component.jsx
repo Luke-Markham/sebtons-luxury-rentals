@@ -7,10 +7,10 @@ import {
   searchResultsSelector,
   failedSearchSelector
 } from "../../redux/search/search.selectors";
+import Fade from "react-reveal/Fade";
 import PropertyCard from "../../components/property-card/property-card.component";
 import FailedSearchCard from "../../components/failed-search-card/failed-search-card.component";
 import Loading from "../../components/loading/loading.component";
-import Fade from "react-reveal/Fade";
 
 const SearchResultsPage = ({
   isFetching,

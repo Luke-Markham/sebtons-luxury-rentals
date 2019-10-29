@@ -1,10 +1,10 @@
 @import "../../utilities/global-styles";
 
 .services-header {
-  background-image: url("../../assets/jpg/servicesBkg.jpg");
+  background-image: url("../../assets/jpg/services-bkg.jpg");
   background-size: cover;
-  //   background-position: center;
-  height: 50vmin;
+  background-position: center bottom;
+  height: 65vmin;
   display: flex;
   align-items: center;
   padding: 2vmin;
@@ -12,11 +12,8 @@
 
 .services-title {
   @extend %title;
+  font-size: 4.5vmin;
   background-color: rgba(255, 255, 255, 0.705);
-  border-bottom: 1vmin solid $sebtons-gold;
+  border-bottom: 0.5vmin solid $sebtons-gold;
   padding: 1vmin;
-}
-
-.services-note {
-  margin: 2vmin auto;
 }

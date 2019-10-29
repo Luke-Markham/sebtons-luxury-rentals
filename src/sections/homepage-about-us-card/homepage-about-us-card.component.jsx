@@ -10,16 +10,21 @@ const HomePageAboutUs = () => {
         <h2 className="homepage-about-us-title">Sebtons</h2>
       </Fade>
       <Fade duration={2000}>
-        <h3 className="homepage-about-us-title-description">
+        {/* <h3 className="homepage-about-us-title-description">
           St Lucia Luxury Property Rentals and Services.
-        </h3>
+        </h3> */}
         <div className="homepage-about-us-layout-container">
           <p className="homepage-about-us-text">
             Based in St Lucia, Sebtons is the leading luxury vacation rental and
-            services provider in St Lucia. 15 years of experience has enabled us
-            to craft the perfect tropical get away for discerning clients who
-            require VIP treatment in one of the most beautiful destinations
-            around the world.
+            services provider in St Lucia.
+            <br />
+            <br />
+            15 years of experience has enabled us to craft the perfect tropical
+            get away for discerning clients who require VIP treatment in one of
+            the most beautiful destinations around the world.
+            <br />
+            <br />
+            Sebtons, your comfort is our priority.
           </p>
           <img
             className="world-map"
