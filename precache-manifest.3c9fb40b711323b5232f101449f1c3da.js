@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "56edca2d8a1c82d987b10a40ef68236b",
+    "revision": "5b2224f16697e929562bfa36a2986ffc",
     "url": "/sebtons-luxury-rentals/index.html"
   },
   {
-    "revision": "89b975e323951c0b0b47",
+    "revision": "43385ab853d711cf3083",
     "url": "/sebtons-luxury-rentals/static/css/main.5b0d8cf6.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/sebtons-luxury-rentals/static/js/2.74fefb5a.chunk.js"
   },
   {
-    "revision": "89b975e323951c0b0b47",
-    "url": "/sebtons-luxury-rentals/static/js/main.2457f74e.chunk.js"
+    "revision": "43385ab853d711cf3083",
+    "url": "/sebtons-luxury-rentals/static/js/main.6125dc44.chunk.js"
   },
   {
     "revision": "b296959b5bf1bd503e12",
