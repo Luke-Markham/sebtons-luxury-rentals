@@ -40,10 +40,14 @@ const App = () => {
             <DesktopNav />
           </Breakpoint>
           <Switch>
-            <Redirect exact from="/" to="/home" />
+            <Redirect
+              exact
+              from="/sebtons-luxury-rentals/"
+              to="/sebtons-luxury-rentals/home"
+            />
             <Route
               exact
-              path="/home"
+              path="/sebtons-luxury-rentals/home"
               render={routeObject => (
                 <Fade>
                   <HomePage routeObject={routeObject} />
@@ -52,44 +56,44 @@ const App = () => {
             />
             <Route
               exact
-              path="/searchresults"
+              path="/sebtons-luxury-rentals/searchresults"
               render={routeObject => (
                 <Fade>
                   <SearchResultsPage routeObject={routeObject} />
                 </Fade>
               )}
             />
-            <Route exact path="/properties">
+            <Route exact path="/sebtons-luxury-rentals/properties">
               <Fade>
                 <AllPropertiesPage />
               </Fade>
             </Route>
             <Route
-              path="/properties/"
+              path="/sebtons-luxury-rentals/properties/"
               render={routeObject => (
                 <Fade>
                   <PropertyPage routeObject={routeObject} />
                 </Fade>
               )}
             />
-            <Route exact path="/services">
+            <Route exact path="/sebtons-luxury-rentals/services">
               <Fade>
                 <ServicesPage />
               </Fade>
             </Route>
 
-            <Route exact path="/aboutus">
+            <Route exact path="/sebtons-luxury-rentals/aboutus">
               <Fade>
                 <AboutUsPage />
               </Fade>
             </Route>
 
-            <Route exact path="/contact">
+            <Route exact path="/sebtons-luxury-rentals/contact">
               <Fade>
                 <ContactPage />
               </Fade>
             </Route>
-            <Route exact path="/rentalpolicy">
+            <Route exact path="/sebtons-luxury-rentals/rentalpolicy">
               <Fade>
                 <RentalPolicyPage />
               </Fade>

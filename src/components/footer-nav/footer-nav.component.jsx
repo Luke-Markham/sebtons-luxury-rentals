@@ -10,7 +10,7 @@ const FooterNav = () => {
         <ul className="footer-nav-ul">
           <NavLink
             exact
-            to="/home"
+            to="/sebtons-luxury-rentals/home"
             className="footer-nav-item"
             activeClassName="footer-is-current"
           >
@@ -18,7 +18,7 @@ const FooterNav = () => {
           </NavLink>
           <NavLink
             exact
-            to="/properties"
+            to="/sebtons-luxury-rentals/properties"
             className="footer-nav-item"
             activeClassName="footer-is-current"
           >
@@ -26,7 +26,7 @@ const FooterNav = () => {
           </NavLink>
           <NavLink
             exact
-            to="/services"
+            to="/sebtons-luxury-rentals/services"
             className="footer-nav-item"
             activeClassName="footer-is-current"
           >
@@ -34,7 +34,7 @@ const FooterNav = () => {
           </NavLink>
           <NavLink
             exact
-            to="/rentalpolicy"
+            to="/sebtons-luxury-rentals/rentalpolicy"
             className="footer-nav-item"
             activeClassName="footer-is-current"
           >
@@ -42,7 +42,7 @@ const FooterNav = () => {
           </NavLink>
           <NavLink
             exact
-            to="/aboutus"
+            to="/sebtons-luxury-rentals/aboutus"
             className="footer-nav-item"
             activeClassName="footer-is-current"
           >
@@ -50,7 +50,7 @@ const FooterNav = () => {
           </NavLink>
           <NavLink
             exact
-            to="/contact"
+            to="/sebtons-luxury-rentals/contact"
             className="footer-nav-item"
             activeClassName="footer-is-current"
           >

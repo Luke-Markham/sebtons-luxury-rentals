@@ -8,7 +8,7 @@ const DesktopNav = () => {
       <ul className="desktop-nav-ul">
         <NavLink
           exact
-          to="/home"
+          to="/sebtons-luxury-rentals/home"
           className="desktop-nav-item"
           activeClassName="desktop-is-current"
         >
@@ -16,7 +16,7 @@ const DesktopNav = () => {
         </NavLink>
         <NavLink
           exact
-          to="/properties"
+          to="/sebtons-luxury-rentals/properties"
           className="desktop-nav-item"
           activeClassName="desktop-is-current"
         >
@@ -24,7 +24,7 @@ const DesktopNav = () => {
         </NavLink>
         <NavLink
           exact
-          to="/services"
+          to="/sebtons-luxury-rentals/services"
           className="desktop-nav-item"
           activeClassName="desktop-is-current"
         >
@@ -32,7 +32,7 @@ const DesktopNav = () => {
         </NavLink>
         <NavLink
           exact
-          to="/rentalpolicy"
+          to="/sebtons-luxury-rentals/rentalpolicy"
           className="desktop-nav-item"
           activeClassName="desktop-is-current"
         >
@@ -40,7 +40,7 @@ const DesktopNav = () => {
         </NavLink>
         <NavLink
           exact
-          to="/aboutus"
+          to="/sebtons-luxury-rentals/aboutus"
           className="desktop-nav-item"
           activeClassName="desktop-is-current"
         >
@@ -48,7 +48,7 @@ const DesktopNav = () => {
         </NavLink>
         <NavLink
           exact
-          to="/contact"
+          to="/sebtons-luxury-rentals/contact"
           className="desktop-nav-item"
           activeClassName="desktop-is-current"
         >

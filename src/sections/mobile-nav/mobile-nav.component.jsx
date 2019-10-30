@@ -27,7 +27,7 @@ const MobileNav = ({ toggleMobileNav, displayMobileNav }) => {
               <ul className="mobile-nav-ul">
                 <NavLink
                   exact
-                  to="/home"
+                  to="/sebtons-luxury-rentals/home"
                   className="mobile-nav-item"
                   onClick={toggleMobileNav}
                   activeClassName="mobile-is-current"
@@ -36,7 +36,7 @@ const MobileNav = ({ toggleMobileNav, displayMobileNav }) => {
                 </NavLink>
                 <NavLink
                   exact
-                  to="/properties"
+                  to="/sebtons-luxury-rentals/properties"
                   className="mobile-nav-item"
                   onClick={toggleMobileNav}
                   activeClassName="mobile-is-current"
@@ -45,7 +45,7 @@ const MobileNav = ({ toggleMobileNav, displayMobileNav }) => {
                 </NavLink>
                 <NavLink
                   exact
-                  to="/services"
+                  to="/sebtons-luxury-rentals/services"
                   className="mobile-nav-item"
                   onClick={toggleMobileNav}
                   activeClassName="mobile-is-current"
@@ -54,7 +54,7 @@ const MobileNav = ({ toggleMobileNav, displayMobileNav }) => {
                 </NavLink>
                 <NavLink
                   exact
-                  to="/rentalpolicy"
+                  to="/sebtons-luxury-rentals/rentalpolicy"
                   className="mobile-nav-item"
                   onClick={toggleMobileNav}
                   activeClassName="mobile-is-current"
@@ -63,7 +63,7 @@ const MobileNav = ({ toggleMobileNav, displayMobileNav }) => {
                 </NavLink>
                 <NavLink
                   exact
-                  to="/aboutus"
+                  to="/sebtons-luxury-rentals/aboutus"
                   className="mobile-nav-item"
                   onClick={toggleMobileNav}
                   activeClassName="mobile-is-current"
@@ -72,7 +72,7 @@ const MobileNav = ({ toggleMobileNav, displayMobileNav }) => {
                 </NavLink>
                 <NavLink
                   exact
-                  to="/contact"
+                  to="/sebtons-luxury-rentals/contact"
                   className="mobile-nav-item"
                   onClick={toggleMobileNav}
                   activeClassName="mobile-is-current"
