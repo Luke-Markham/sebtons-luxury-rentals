@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/sebtons-luxury-rentals/precache-manifest.1d8d2add1a2df6e4a72753700507df7b.js"
+  "/sebtons-luxury-rentals/precache-manifest.45ce6d131dfc2f6baad776f42337f25f.js"
 );
 
 self.addEventListener('message', (event) => {
