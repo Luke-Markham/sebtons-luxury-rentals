@@ -3,7 +3,7 @@ import "./featured-properties.styles.scss";
 import PropertyCard from "../../components/property-card/property-card.component";
 import Fade from "react-reveal/Fade";
 
-const FeaturedProperties = ({ featuredProperties }) => {
+const FeaturedProperties = ({ featuredProperties, routeObject }) => {
   return (
     <div className="featured-properties-container">
       <Fade left>
@@ -22,6 +22,7 @@ const FeaturedProperties = ({ featuredProperties }) => {
           return (
             <Fade key={index}>
               <PropertyCard
+                routeObject={routeObject}
                 imageUrl={imageUrl}
                 altDescription={altDescription}
                 propertyTitle={propertyTitle}

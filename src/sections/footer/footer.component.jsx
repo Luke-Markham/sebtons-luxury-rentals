@@ -6,27 +6,30 @@ import logoS from "../../assets/png/sebtons-logo-S.png";
 import FooterNav from "../../components/footer-nav/footer-nav.component";
 import PhoneNumber from "../../components/phone-number/phone-number.component";
 import SocialMedia from "../../components/social-media/social-media.component";
+import Fade from "react-reveal/Fade";
 const Footer = () => {
   return (
-    <footer className="footer">
-      <div className="footer-logo-container">
-        <SebtonsLogo size="sebtons-logo-small" logoSrc={logoS} />
-      </div>
-      <div className="footer-nav-container">
-        <FooterNav />
-      </div>
-      <div className="footer-phone-and-social-container">
-        <PhoneNumber />
-        <SocialMedia />
-      </div>
+    <Fade duration={1500}>
+      <footer className="footer">
+        <div className="footer-logo-container">
+          <SebtonsLogo size="sebtons-logo-small" logoSrc={logoS} />
+        </div>
+        <div className="footer-nav-container">
+          <FooterNav />
+        </div>
+        <div className="footer-phone-and-social-container">
+          <PhoneNumber />
+          <SocialMedia />
+        </div>
 
-      <div className="footer-bottom-bar">
-        <Link className="footer-rental-policy-link" to="rentalpolicy">
-          Rental Policy
-        </Link>
-        <p>© 2019 Sebtons INC. All Rights Reserved.</p>
-      </div>
-    </footer>
+        <div className="footer-bottom-bar">
+          <Link className="footer-rental-policy-link" to="rentalpolicy">
+            Rental Policy
+          </Link>
+          <p>© 2019 Sebtons INC. All Rights Reserved.</p>
+        </div>
+      </footer>
+    </Fade>
   );
 };
 

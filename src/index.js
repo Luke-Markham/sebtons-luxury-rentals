@@ -6,16 +6,17 @@ import Modal from "./components/modal/modal.component";
 import { Provider } from "react-redux";
 import store from "./redux/store";
 import * as serviceWorker from "./serviceWorker";
-import { BrowserRouter, Route } from "react-router-dom";
-
+import { HashRouter as Router, Route } from "react-router-dom";
+import { createBrowserHistory } from "history";
+const customHistory = createBrowserHistory();
 ReactDOM.render(
   <Provider store={store}>
-    <BrowserRouter>
+    <Router history={customHistory}>
       <Route path="/">
         <App />
         <Modal />
       </Route>
-    </BrowserRouter>
+    </Router>
   </Provider>,
   document.getElementById("root")
 );

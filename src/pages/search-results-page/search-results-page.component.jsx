@@ -54,6 +54,7 @@ const SearchResultsPage = ({
             return (
               <Fade key={index}>
                 <PropertyCard
+                  routeObject={routeObject}
                   photos={photos}
                   price={price}
                   location={location}

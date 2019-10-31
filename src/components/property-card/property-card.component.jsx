@@ -3,6 +3,7 @@ import "./property-card.styles.scss";
 import PhotoCarousel from "../../components/photo-carousel/photo-carousel.component";
 
 const PropertyCard = ({
+  routeObject,
   photos,
   propertyPageUrl,
   propertyTitle,
@@ -19,24 +20,28 @@ const PropertyCard = ({
     <div className="property-card-container">
       {/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=  Featured Property =-=-=-=-=-=-=-=-=-=-=-=-=-=-=  */}
       {imageUrl && altDescription && propertyPageUrl ? (
-        <a
+        <div
           className="property-page-link-container"
-          href={`/properties/${propertyPageUrl}`}
+          onClick={() =>
+            routeObject.history.push(`properties/${propertyPageUrl}`)
+          }
         >
           <img className="property-image" src={imageUrl} alt={altDescription} />
           <p className="featured-property-title">{propertyTitle}</p>
-        </a>
+        </div>
       ) : null}
       {/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-= All Properties =-=-=-=-=-=-=-=-=-=-=-=-=-=-= */}
       {photos && propertyPageUrl ? (
         <div>
           <PhotoCarousel photosArray={photos} />
-          <a
+          <div
             className="property-page-link-container"
-            href={`properties/${propertyPageUrl}`}
+            onClick={() =>
+              routeObject.history.push(`properties/${propertyPageUrl}`)
+            }
           >
             <p className="all-property-title">{propertyTitle}</p>
-          </a>
+          </div>
         </div>
       ) : null}
 

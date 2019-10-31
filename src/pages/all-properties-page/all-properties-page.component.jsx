@@ -12,7 +12,8 @@ import ReactLoading from "react-loading";
 const AllPropertiesPage = ({
   isFetching,
   allProperties,
-  fetchAllPropertiesStartAsync
+  fetchAllPropertiesStartAsync,
+  routeObject
 }) => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -41,6 +42,7 @@ const AllPropertiesPage = ({
             return (
               <Fade key={index}>
                 <PropertyCard
+                  routeObject={routeObject}
                   photos={photos}
                   price={price}
                   location={location}

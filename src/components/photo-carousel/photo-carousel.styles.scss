@@ -29,24 +29,30 @@
   width: 3vmin;
   fill: white;
   transition: all 0.3s ease-in-out;
-  &:hover {
-    cursor: pointer;
-    transform: rotate(180deg);
+  @media screen and(min-width:992px) {
+    &:hover {
+      cursor: pointer;
+      transform: rotate(180deg);
+    }
   }
 }
 
 .next-photo {
   right: 1%;
-  &:hover {
-    cursor: pointer;
-    animation: next 0.7s ease-in-out 2 forwards;
+  @media screen and(min-width:992px) {
+    &:hover {
+      cursor: pointer;
+      animation: next 0.7s ease-in-out 2 forwards;
+    }
   }
 }
 .prev-photo {
   left: 1%;
-  &:hover {
-    cursor: pointer;
-    animation: prev 0.5s ease-in-out 2 forwards;
+  @media screen and(min-width:992px) {
+    &:hover {
+      cursor: pointer;
+      animation: prev 0.5s ease-in-out 2 forwards;
+    }
   }
 }
 .next-photo,

@@ -27,7 +27,10 @@ const HomePage = ({
         {isFetching ? (
           <Loading />
         ) : (
-          <FeaturedProperties featuredProperties={featuredProperties} />
+          <FeaturedProperties
+            routeObject={routeObject}
+            featuredProperties={featuredProperties}
+          />
         )}
       </LazyLoad>
       <LazyLoad>

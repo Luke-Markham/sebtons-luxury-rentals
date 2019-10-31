@@ -14,18 +14,21 @@
   box-shadow: $box-shadow;
 }
 
-.scroll-next-photo {
-  &:hover {
-    cursor: pointer;
-    animation: next 0.7s ease-in-out 2 forwards;
+@media screen and(min-width:992px) {
+  .scroll-next-photo {
+    &:hover {
+      cursor: pointer;
+      animation: next 0.7s ease-in-out 2 forwards;
+    }
+  }
+  .scroll-prev-photo {
+    &:hover {
+      cursor: pointer;
+      animation: prev 0.5s ease-in-out 2 forwards;
+    }
   }
 }
-.scroll-prev-photo {
-  &:hover {
-    cursor: pointer;
-    animation: prev 0.5s ease-in-out 2 forwards;
-  }
-}
+
 .scroll-next-photo,
 .scroll-prev-photo {
   align-self: center;

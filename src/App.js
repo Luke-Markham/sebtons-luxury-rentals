@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense, lazy } from "react";
 import "./App.css";
 import { Route, Redirect, Switch } from "react-router-dom";
 import {
@@ -10,15 +10,30 @@ import Fade from "react-reveal";
 import Header from "./sections/header/header.component";
 import MobileNav from "./sections/mobile-nav/mobile-nav.component";
 import DesktopNav from "./sections/desktop-nav/desktop-nav.component";
-import HomePage from "./pages/home-page/home-page.component";
-import SearchResultsPage from "./pages/search-results-page/search-results-page.component";
-import AllPropertiesPage from "./pages/all-properties-page/all-properties-page.component";
-import PropertyPage from "./pages/property-page/property-page.component";
-import RentalPolicyPage from "./pages/rental-policy-page/rental-policy-page.component";
-import ServicesPage from "./pages/services-page/services-page.component";
-import AboutUsPage from "./pages/about-us-page/about-us-page.component";
 import Footer from "./sections/footer/footer.component";
-import ContactPage from "./pages/contact-page/contact-page.component";
+
+const SearchResultsPage = lazy(() =>
+  import("./pages/search-results-page/search-results-page.component")
+);
+const AllPropertiesPage = lazy(() =>
+  import("./pages/all-properties-page/all-properties-page.component")
+);
+const PropertyPage = lazy(() =>
+  import("./pages/property-page/property-page.component")
+);
+const RentalPolicyPage = lazy(() =>
+  import("./pages/rental-policy-page/rental-policy-page.component")
+);
+const ServicesPage = lazy(() =>
+  import("./pages/services-page/services-page.component")
+);
+const AboutUsPage = lazy(() =>
+  import("./pages/about-us-page/about-us-page.component")
+);
+const ContactPage = lazy(() =>
+  import("./pages/contact-page/contact-page.component")
+);
+const HomePage = lazy(() => import("./pages/home-page/home-page.component"));
 
 const App = () => {
   setDefaultBreakpoints([
@@ -39,66 +54,71 @@ const App = () => {
           <Breakpoint large up>
             <DesktopNav />
           </Breakpoint>
-          <Switch>
-            <Redirect
-              exact
-              from="/sebtons-luxury-rentals/"
-              to="/sebtons-luxury-rentals/home"
-            />
-            <Route
-              exact
-              path="/sebtons-luxury-rentals/home"
-              render={routeObject => (
-                <Fade>
-                  <HomePage routeObject={routeObject} />
-                </Fade>
-              )}
-            />
-            <Route
-              exact
-              path="/sebtons-luxury-rentals/searchresults"
-              render={routeObject => (
-                <Fade>
-                  <SearchResultsPage routeObject={routeObject} />
-                </Fade>
-              )}
-            />
-            <Route exact path="/sebtons-luxury-rentals/properties">
-              <Fade>
-                <AllPropertiesPage />
-              </Fade>
-            </Route>
-            <Route
-              path="/sebtons-luxury-rentals/properties/"
-              render={routeObject => (
-                <Fade>
-                  <PropertyPage routeObject={routeObject} />
-                </Fade>
-              )}
-            />
-            <Route exact path="/sebtons-luxury-rentals/services">
-              <Fade>
-                <ServicesPage />
-              </Fade>
-            </Route>
+          <Suspense fallback={<div className="suspense-loading" />}>
+            <Switch>
+              <Redirect exact from="/" to="/home" />
 
-            <Route exact path="/sebtons-luxury-rentals/aboutus">
-              <Fade>
-                <AboutUsPage />
-              </Fade>
-            </Route>
+              <Route
+                exact
+                path="/home"
+                render={routeObject => (
+                  <Fade>
+                    <HomePage routeObject={routeObject} />
+                  </Fade>
+                )}
+              />
 
-            <Route exact path="/sebtons-luxury-rentals/contact">
-              <Fade>
-                <ContactPage />
-              </Fade>
-            </Route>
-            <Route exact path="/sebtons-luxury-rentals/rentalpolicy">
-              <Fade>
-                <RentalPolicyPage />
-              </Fade>
-            </Route>
-          </Switch>
+              <Route
+                exact
+                path="/searchresults"
+                render={routeObject => (
+                  <Fade>
+                    <SearchResultsPage routeObject={routeObject} />
+                  </Fade>
+                )}
+              />
+              <Route
+                exact
+                path="/properties"
+                render={routeObject => (
+                  <Fade>
+                    <AllPropertiesPage routeObject={routeObject} />
+                  </Fade>
+                )}
+              />
+
+              <Route
+                path="/properties/"
+                render={routeObject => (
+                  <Fade>
+                    <PropertyPage routeObject={routeObject} />
+                  </Fade>
+                )}
+              />
+              <Route exact path="/services">
+                <Fade>
+                  <ServicesPage />
+                </Fade>
+              </Route>
+
+              <Route exact path="/aboutus">
+                <Fade>
+                  <AboutUsPage />
+                </Fade>
+              </Route>
+
+              <Route exact path="/contact">
+                <Fade>
+                  <ContactPage />
+                </Fade>
+              </Route>
+              <Route exact path="/rentalpolicy">
+                <Fade>
+                  <RentalPolicyPage />
+                </Fade>
+              </Route>
+            </Switch>
+          </Suspense>
         </div>
         <Footer />
       </div>
